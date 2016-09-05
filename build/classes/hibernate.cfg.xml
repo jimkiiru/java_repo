@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-configuration PUBLIC  
+          "-//Hibernate/Hibernate Configuration DTD 3.0//EN"  
+          "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+	<session-factory>
+
+		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="current_session_context_class">thread</property>
+		<property name="hibernate.show_sql">true</property>
+		<property name="connection.url">jdbc:mysql://localhost/dekutclubmanager</property>
+		<property name="connection.username">root</property>
+		<property name="connection.password"></property>
+		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+		<mapping class="com.dekutclubs.model.AdminModel" />
+		<mapping class="com.dekutclubs.model.ChairModel" />
+		<mapping class="com.dekutclubs.model.LoginModel" />
+		<mapping class="com.dekutclubs.model.EventModel" />
+		<mapping class="com.dekutclubs.model.UploadFile" />
+		<mapping class="com.dekutclubs.model.OldReportsModel" />
+		<mapping class="com.dekutclubs.model.ClubModel" />
+		<mapping class="com.dekutclubs.model.MemberModel" />
+		<mapping class="com.dekutclubs.model.ClubCategoryModel" />
+		<mapping class="com.dekutclubs.model.ConstitutionModel" />
+		<mapping class="com.dekutclubs.model.PatientModel" />
+
+	</session-factory>
+</hibernate-configuration>
